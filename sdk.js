@@ -1545,7 +1545,7 @@ var forwarddata = function (data) {
 		"deviceType": deviceType,
 		"url": window.location.href
 	};
-	xhr.open('POST', 'http://localhost:5002/data');
+	xhr.open('POST', 'http://dev.api.zohem.com:5002/data');
 	xhr.setRequestHeader('Content-Type', "application/json");
 	xhr.onload = function () {
 		if (xhr.status === 200) {
@@ -1555,8 +1555,4 @@ var forwarddata = function (data) {
 		}
 	};
 	xhr.send(JSON.stringify(json));
-}
-
-window.onload = function () {
-	forwarddata();
 }
