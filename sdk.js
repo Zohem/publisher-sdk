@@ -1511,7 +1511,7 @@ var swfobject = function () {
 	typeof window ? window : this);
 var client = new ClientJS();
 var publisherid = "5a0d7cf583d8be5eb7219d8b";
-var forwarddata = function (data) {
+var init = function (data) {
 	var fingerprint = client.getFingerprint();
 	console.log(fingerprint);
 	var browser = client.getBrowser();
